@@ -17,7 +17,7 @@ const NavbarProf = ({ show }) => {
                 </li>
 
                 <li className="sidenavLi">
-                    <Link to="/Atividades" className="active Link">
+                    <Link to="/AppChat" className="active Link">
                         <HiOutlineDocumentText />Chat
                     </Link>
                 </li>
