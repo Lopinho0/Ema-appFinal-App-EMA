@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
+import NavbarProf from './NavbarProf'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { BrowserRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import HomeAluno from '../Pages/HomeAluno';
 import Atividades from '../Pages/Atividades';
-import App from '../Pages/boletimProf/App';
+import AppProf from '../Pages/boletimProf/AppProf';
 
 const Hero = ({ handleLogout }) => {
 
@@ -18,13 +18,13 @@ const Hero = ({ handleLogout }) => {
 
                     <button onClick={handleLogout}>Logout</button>
                 </nav>
-                    <Navbar show={showNav} />
+                    <NavbarProf show={showNav} />
                 
 
                 <div className="MainHero">
                 <Route path="/HomeAluno" component={HomeAluno} />
                 <Route path="/Atividades" component={Atividades} />
-                <Route path="/App" component={App} />
+                <Route path="/AppProf" component={AppProf} />
                 </div>
             </Router>
         </section>

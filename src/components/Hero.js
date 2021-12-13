@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { BrowserRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import HomeAluno from '../Pages/HomeAluno';
 import Atividades from '../Pages/Atividades';
-import Boletim from '../Pages/boletimProf/Boletim';
+import App from '../Pages/BoletimAluno/App';
 
 const Hero = ({ handleLogout }) => {
 
@@ -24,7 +24,7 @@ const Hero = ({ handleLogout }) => {
                 <div className="MainHero">
                 <Route path="/HomeAluno" component={HomeAluno} />
                 <Route path="/Atividades" component={Atividades} />
-                <Route path="/Boletim" component={Boletim} />
+                <Route path="/App" component={App} />
                 </div>
             </Router>
         </section>
